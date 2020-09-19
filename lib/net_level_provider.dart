@@ -9,17 +9,23 @@ class NextLevelProvider extends ChangeNotifier{
   List<int> _boxes = boxesLevel1;
   List<int> _bomb = [-1];
 
-
+void clear(){
+_playerPosition = null;
+_bombPosition = null;
+_bomb = null;
+_barriers = null;
+_boxes = null;
+notifyListeners();
+}
   void nextLevel(List<int> boxes2,List<int> brrier2, int sq, int pPos, int bPos,List<int> bomb2){
-    //print("$_squares  + $_boxes + $_bomb + $_barriers + $_playerPosition + $_bombPosition");
+    print("$_squares  + $_boxes + $_bomb + $_barriers + $_playerPosition + $_bombPosition");
     _boxes = boxes2;
     _barriers = brrier2;
     _squares = sq;
     _playerPosition = pPos;
     _bombPosition = bPos;
     _bomb = bomb2;
-
-    //print("$_squares  + $_boxes + $_bomb + $_barriers + $_playerPosition + $_bombPosition");
+    print("$_squares  + $_boxes + $_bomb + $_barriers + $_playerPosition + $_bombPosition");
     notifyListeners();
   }
   placeBomb(){
@@ -71,6 +77,7 @@ class NextLevelProvider extends ChangeNotifier{
     _playerPosition += 1;
     notifyListeners();
   }
+
   int get playerPosition => _playerPosition;
   int get bombPosition => _bombPosition;
   int get squares => _squares;
