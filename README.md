@@ -3,8 +3,9 @@
 A new Flutter application.
 
 ## Snippets
-<img align="left" src="images/ss1.jpg" height=400 width=200 title="Screen 1" hspace="20" />
-<img align="right" src="images/ss2.jpg" height=400 width=200 title="Screen 2" hspace="20"/>
+<p> <img align="left" src="images/ss1.jpg" height=400 width=200 title="Screen 1" hspace="20" />
+<img align="right" src="images/ss2.jpg" height=400 width=200 title="Screen 2" hspace="20"/> </p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
